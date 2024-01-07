@@ -11,9 +11,9 @@ int main()
     while (close) {
         cout << "\t 1: create a new task \t 2: view tasks \t 3: edit task \t 4: delete task \t 5: close" << endl;
         while (!(cin >> choose)) {
-            std::cout << "error.enter again" << endl;;
-           std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cout << "error.enter again" << endl;;
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
         switch (choose) {
         case 1: {
@@ -24,19 +24,19 @@ int main()
             cout << "enter the date : first the day, then the month and year" << endl;
             int day, month, year;
             while (!(cin >> day)) {
-                std::cout << "error.enter again" << endl;;
-                std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "error.enter again" << endl;;
+                cin.clear();
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
             while (!(cin >> month)) {
-                std::cout << "error.enter again" << endl;;
-                std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "error.enter again" << endl;;
+                cin.clear();
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
             while (!(cin >> year)) {
-                std::cout << "error.enter again" << endl;;
-                std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "error.enter again" << endl;;
+                cin.clear();
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
                 if (day > 31)
                     day = 1;
@@ -98,19 +98,19 @@ int main()
                 int newday, newmonth, newyear;
                 cout << "write a new data" << endl;
                 while (!(cin >> newday)) {
-                    std::cout << "error.enter again" << endl;;
-                    std::cin.clear();
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    cout << "error.enter again" << endl;;
+                    cin.clear();
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 }
                 while (!(cin >> newmonth)) {
-                    std::cout << "error.enter again" << endl;;
-                    std::cin.clear();
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    cout << "error.enter again" << endl;;
+                    cin.clear();
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 }
                 while (!(cin >> newyear)) {
-                    std::cout << "error.enter again" << endl;;
-                    std::cin.clear();
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    cout << "error.enter again" << endl;;
+                    cin.clear();
+                    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 }
                 if (newday > 31)
                     newday = 1;
@@ -139,9 +139,9 @@ int main()
             cout << "Which task do you want to delete?" << endl;
             int numoftusk;
             while (!(cin >> numoftusk)) {
-                std::cout << "error.enter again" << endl;;
-                std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "error.enter again" << endl;;
+                cin.clear();
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             }
             if (numoftusk > task.size()&&numoftusk<=0)break;
             --numoftusk;
